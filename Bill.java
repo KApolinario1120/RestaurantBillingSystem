@@ -32,7 +32,7 @@ public class Bill {
 
     public void getOrder() {
         for (int i = 0; i <orderedFood.size() ; i++) {
-            //Print out Dish ordered along with quantity. ex.  "Steak 2"
+            //Print out Dish ordered along with quantity. ex.  "Sandwich 2"
             System.out.println(orderedFood.get(i) + " " + orderedQuantity.get(i));
         }
     }
