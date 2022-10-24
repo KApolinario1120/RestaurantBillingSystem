@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Bill {
@@ -27,6 +28,12 @@ public class Bill {
                 totalCost += quantity * cost[i];
             }
         }
+    }
 
+    public void getOrder() {
+        for (int i = 0; i <orderedFood.size() ; i++) {
+            //Print out Dish ordered along with quantity. ex.  "Steak 2"
+            System.out.println(orderedFood.get(i) + " " + orderedQuantity.get(i));
+        }
     }
 }
