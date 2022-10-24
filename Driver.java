@@ -8,6 +8,11 @@ public class Driver {
             Bill myBill = new Bill();
             //Pass copies of array references
             myBill.addOrder("Sandwich", 2, dish, cost);
+            myBill.addOrder("Coffee", 2, dish, cost);
+            myBill.addOrder("French Fries", 1, dish, cost);
+            myBill.addOrder("Salad", 1, dish, cost);
+            myBill.getOrder();
+            System.out.println(myBill.getTotalCost());
         }
 
 }
